@@ -6,6 +6,8 @@
 
 # Ignore bundler config.
 /.bundle
+# avoid conflict between guard and spring
+/spring/*.pid
 
 # Ignore the default SQLite database.
 /db/*.sqlite3
