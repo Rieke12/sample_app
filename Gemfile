@@ -5,6 +5,7 @@ ruby '2.5.1'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 5.2.2'
+gem 'bcrypt', '3.1.12'
 # convert Less to Sass to make bootstrap available for app
 gem 'bootstrap-sass', '3.4.0'
 
