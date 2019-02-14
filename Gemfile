@@ -7,6 +7,10 @@ ruby '2.5.1'
 gem 'rails', '~> 5.2.2'
 #makes has_secure_password available to user model
 gem 'bcrypt', '3.1.12'
+#generates sample users
+gem 'faker',  '>=1.7.3'
+gem 'will_paginate', '3.1.6'
+gem 'bootstrap-will_paginate', '1.0.0'
 # convert Less to Sass to make bootstrap available for app
 gem 'bootstrap-sass', '3.4.0'
 

@@ -11,8 +11,7 @@ class User < ApplicationRecord
     format: { with: VALID_EMAIL_REGEX }, uniqueness: { case_sensitive: false }
   #provided by gem bcrypt
   has_secure_password
-  validates :password, presence: true, length: { minimum: 5 }
-
+  validates :password, presence: true, length: { minimum: 6 }, allow_nil: true
   class << self
     #method for creating user fixture for tests, thus using min_cost for password
     def digest(string)

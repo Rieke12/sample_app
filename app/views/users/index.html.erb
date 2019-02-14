@@ -1,0 +1,11 @@
+<% provide(:title, "All users") %>
+<h1>All users</h1>
+
+<%= will_paginate %>
+
+<ul class="users"> 
+  #ruby assumes that the each item in the array should be rendered independently 
+  <%= render @users %>
+</ul>
+
+<%= will_paginate %>
