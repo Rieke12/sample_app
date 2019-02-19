@@ -15,4 +15,6 @@ Rails.application.routes.draw do
   # creates a named routde for account activations
   resources :account_activations, only: [:edit]
   resources :password_resets,     only: [:new, :create, :edit, :update]
+  #doesn't need new and edit, as those are handled through user profile
+  resources :microposts,          only: [:create, :destroy]
 end
